@@ -11,6 +11,7 @@ import com.ljb.summary.adapter.FrameListViewAdapter;
 import com.ljb.summary.base.BaseFragment;
 import com.ljb.summary.bean.TypeInfo;
 import com.ljb.summary.callback.Response;
+import com.ljb.summary.frame.Picasso.PicassoActivity;
 import com.ljb.summary.frame.Volley.VolleyActivity;
 import com.ljb.summary.frame.butterknife.ButterKnifeActivity;
 import com.ljb.summary.frame.eventbus.EventBusActivity;
@@ -85,6 +86,10 @@ public class FrameFragment extends BaseFragment implements AdapterView.OnItemCli
 
         if (itemTitle.equals("volley")) {
             intent = new Intent(getActivity(), VolleyActivity.class);
+        }
+
+        if (itemTitle.equals("picasso")) {
+            intent = new Intent(getActivity(), PicassoActivity.class);
         }
 
         if (null != intent) {
