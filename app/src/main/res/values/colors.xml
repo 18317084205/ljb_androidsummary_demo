@@ -3,7 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorblue">#3c92f2</color>
+    <color name="colorblue">#00c1dd</color>
     <color name="colorsplashtext">#51a432</color>
     <color name="colorpointnol">#b8cbfd</color>
+    <color name="colormenu_normal">#97a1a2</color>
+    <color name="colormenu_checked">#00c1dd</color>
+    <color name="colofragment_backgound">#eefcfe</color>
+    <color name="colormenu_line">#d9e4e5</color>
 </resources>

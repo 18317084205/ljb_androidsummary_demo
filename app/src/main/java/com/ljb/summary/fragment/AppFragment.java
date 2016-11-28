@@ -39,7 +39,6 @@ public class AppFragment extends BaseFragment {
 
     @Override
     protected void onUserVisible() {
-        showToast("onUserVisible: " + TAGa);
         Log.d(TAG, "onUserVisible: " + TAGa);
     }
 

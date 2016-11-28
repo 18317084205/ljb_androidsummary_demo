@@ -3,11 +3,11 @@ package com.ljb.summary.base;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
+import com.ljb.summary.utils.Utils;
 
 /**
  * 作者：ljb
@@ -143,18 +143,8 @@ public abstract class BaseFragment extends Fragment {
         startActivityForResult(intent, requestCode);
     }
 
-    private Toast toast;
     protected void showToast(String msg) {
-        if (null == toast) {
-            toast = new Toast(getActivity());
-            toast.setDuration(Toast.LENGTH_SHORT);
-        }
-
-        if (!TextUtils.isEmpty(msg)) {
-            toast.setText(msg);
-            toast.show();
-        }
-
+        Utils.showToast(getActivity(),msg);
     }
 
     protected void showDialog() {

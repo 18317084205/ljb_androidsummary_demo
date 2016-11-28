@@ -2,6 +2,13 @@
     <string name="app_name">安卓项目</string>
     <string name="splash_text">安卓开发技术汇总</string>
     <string name="guide_button_text">开始体验</string>
+    <string name="home_menu_frame">常用框架</string>
+    <string name="home_menu_sersor">传感器</string>
+    <string name="home_menu_app">应用程序</string>
+    <string name="butterknife_initview">初始化View数据</string>
+    <string name="butterknife_initlistview">初始化ListView数据</string>
+
+
     <string name="title_activity_main2">Main2Activity</string>
 
     <string name="title_section1">Section 1</string>

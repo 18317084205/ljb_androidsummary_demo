@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_title_home"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colormenu_line"/>
+
+    <RadioGroup
+        android:id="@+id/menu_root"
+        android:background="@color/colofragment_backgound"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/menu_frame"
+            android:drawableTop="@drawable/menu_frame"
+            android:text="@string/home_menu_frame"
+            style="@style/menu_button"
+            />
+
+
+        <RadioButton
+            android:id="@+id/menu_sensor"
+            android:drawableTop="@drawable/menu_sensor"
+            android:text="@string/home_menu_sersor"
+            style="@style/menu_button"
+            />
+
+        <RadioButton
+            android:id="@+id/menu_app"
+            android:drawableTop="@drawable/menu_app"
+            android:text="@string/home_menu_app"
+            style="@style/menu_button"
+            />
+    </RadioGroup>
+</LinearLayout>
