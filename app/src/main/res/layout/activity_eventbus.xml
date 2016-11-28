@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_eventbus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <include layout="@layout/layout_title_frame"/>
+
+    <Button
+        android:text="注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/eventbus_register_btn" />
+
+    <Button
+        android:text="解注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventbus_unregister_btn" />
+
+    <Button
+        android:text="发布消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventbus_sendmsg_btn" />
+
+    <Button
+        android:text="发布粘性事件消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventbus_sendsticky_btn" />
+
+    <Button
+        android:text="接收粘性事件消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventbus_callmsg_btn" />
+
+    <Button
+        android:text="移除粘性事件消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventbus_rem_btn" />
+
+    <TextView
+        android:id="@+id/eventbus_callmsg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
